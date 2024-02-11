@@ -13,7 +13,7 @@
 Haste is an open-source pastebin software written in node.js, which is easily
 installable in any network.  It can be backed by either redis or filesystem,
 and has a very easy adapter interface for other stores.  A publicly available
-version can be found at [hastebin.com](http://hastebin.com)
+version can be found at [devemm.rw](http://devemm.rw)
 
 Major design objectives:
 
@@ -51,7 +51,7 @@ STDOUT.  Check the README there for more details and usages.
 * `maxLength` - maximum length of a paste (default 400000)
 * `staticMaxAge` - max age for static assets (86400)
 * `recompressStaticAssets` - whether or not to compile static js assets (true)
-* `documents` - static documents to serve (ex: http://hastebin.com/about.com)
+* `documents` - static documents to serve (ex: https://devemm.rw/about.com)
   in addition to static assets.  These will never expire.
 * `storage` - storage options (see below)
 * `logging` - logging preferences
