@@ -1,12 +1,19 @@
-version: '3.0'
+version: '3'
+
 services:
-  haste-server:
-    build: .
-    environment:
-      - STORAGE_TYPE=memcached
-      - STORAGE_HOST=memcached
-      - STORAGE_PORT=11211
+
+  bin-devemm:
+    image: bin-devemm:latest
+    container_name: bin-devemm
     ports:
-      - 7777:7777
-  memcached:
-    image: memcached:latest
+            - "7777:7777"
+    restart: always
+    logging:
+      options:
+        max-size: 5m
+    deploy:
+      resources:
+        limits:
+          memory: 2048M
+        reservations:
+          memory: 1024M
